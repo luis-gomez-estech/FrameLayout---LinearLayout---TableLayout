@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity"
+
+    >
+
+    <!-- Empezamos creando LinearLayout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/fondo"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:text="Hi, there!"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Lets get you set up and started"
+            android:textColor="#d4d3d3"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/TxtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bordes_casillas_formulario"
+            android:drawableRight="@android:drawable/ic_menu_send"
+            android:hint="Enter you Name"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#d4d3d3" />
+
+        <EditText
+            android:id="@+id/TxtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bordes_casillas_formulario"
+            android:drawableRight="@android:drawable/ic_menu_send"
+            android:hint="Enter you MAIL ID"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#d4d3d3" />
+
+        <EditText
+            android:id="@+id/TxtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bordes_casillas_formulario"
+            android:drawableRight="@android:drawable/ic_menu_send"
+            android:hint="Enter your Password"
+            android:inputType="numberPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#d4d3d3" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text=" ----------- or -----------"
+            android:textColor="#d4d3d3"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/sign_google" />
+
+        <Button
+            android:id="@+id/button00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/boton"
+            android:gravity="center"
+            android:text="Continue"
+            android:textSize="20dp"
+            android:textColor="#f32d3f"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

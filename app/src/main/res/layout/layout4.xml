@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/boton1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="80dp"
+                android:layout_alignParentLeft="true"
+                android:text="SEND MONEY"
+                android:drawablePadding="-100dp"
+                android:background="@drawable/degradado1"
+                android:layout_alignParentBottom="true"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:drawableTop="@drawable/send" />
+
+            <Button
+                android:id="@+id/boton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="80dp"
+                android:layout_alignParentLeft="true"
+                android:text="REQUEST MONEY"
+                android:drawablePadding="-100dp"
+                android:background="@drawable/degradado1"
+                android:layout_alignParentBottom="true"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:drawableTop="@drawable/request" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/boton3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="80dp"
+                android:layout_alignParentLeft="true"
+                android:text="SCAN TO PAY"
+                android:drawablePadding="-100dp"
+                android:background="@drawable/degradado1"
+                android:layout_alignParentBottom="true"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:drawableTop="@drawable/scan" />
+
+            <Button
+                android:id="@+id/boton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="80dp"
+                android:layout_alignParentLeft="true"
+                android:text="SCAN TO RECEIVE"
+                android:drawablePadding="-100dp"
+                android:background="@drawable/degradado1"
+                android:layout_alignParentBottom="true"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:drawableTop="@drawable/scan" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/zarga"/>
+
+
+</FrameLayout>
+
+
+

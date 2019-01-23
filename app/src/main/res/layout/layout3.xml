@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/fondo"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="right"
+            android:text="Skip"
+            android:textColor="#d4d3d3"
+            android:textSize="18dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="90dp"
+                android:layout_height="7dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="28dp"
+                app:srcCompat="@drawable/circulos" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="90dp"
+                android:layout_height="7dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="28dp"
+                app:srcCompat="@drawable/circulos" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="90dp"
+                android:layout_height="7dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="28dp"
+                app:srcCompat="@drawable/circulos" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Time to personalize for your needs."
+            android:textColor="#d4d3d3"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
+            android:text="Theaters near you"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:text="Select you preferred locations"
+            android:textColor="#d4d3d3"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_secion_check"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/TxtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="0dp"
+                android:drawableRight="@android:drawable/ic_menu_mylocation"
+                android:hint="Search by Theater name"
+                android:inputType="text|textPostalAddress"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#d4d3d3" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:text="AMC Fullerton Dine-In"
+                    android:textColor="#d4d3d3"
+                    android:textSize="16dp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text=""
+                    app:buttonTint="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:text="AMC Orange 30"
+                    android:textColor="#d4d3d3"
+                    android:textSize="16dp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    app:buttonTint="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:text="Cinemark Century Stadium"
+                    android:textColor="#d4d3d3"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    app:buttonTint="#fff" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="224dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:text="Edward Brea 12"
+                    android:textColor="#d4d3d3"
+                    android:textSize="16dp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    app:buttonTint="#fff" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="0dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/boton2"
+                android:textColor="#fff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:text="Continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/boton"
+                android:textColor="#f32d3f"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
